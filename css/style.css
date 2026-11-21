@@ -32,12 +32,25 @@ a{
     margin: 0 0.5rem;
 }
 
-nav{
+nav {
     display: flex;
     justify-content: space-between;
-    padding: 1rem 2rem;
     align-items: center;
-    flex-wrap: no-wrap;
+    flex-wrap: wrap;
+    gap: 0.5rem 1rem;
+    margin: 0 1rem;
+    padding: 1rem 0;
+}
+
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 0.5rem 1rem;
+}
+
+.nav-links a{
+    margin: 0;
 }
 
 main{
@@ -228,6 +241,6 @@ a:hover{
 /* -:CONTACT:- */
 
 #contact a{
-    margin-left: 0
+    margin-left: 0;
 }
 
