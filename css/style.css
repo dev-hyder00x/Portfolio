@@ -81,30 +81,9 @@ h2{
 
 
 
-/*exception*/
-
-button, #projects-btn{
-    display: inline-block;
-    background-color: #FFD369;
-    color: #172226;
-    border: none;
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-    cursor: pointer;
-    border-radius: 5px;
-    border: 2px solid #FFD369;
-    transition: background-color 0.3s, color 0.3s;
-    transition: border 0.3s;
-}
-
-/*exception*/
-
-
-
-
-
-
 /*hero section*/
+
+
 
 
 #name-is{
@@ -134,27 +113,37 @@ h2:not(#about h2){
     display: flex;
     justify-content: flex-start;
     gap: 1rem;
+    padding: 0;
 }
 
-#projects-btn{
+#projects-btn, #downloadCV{
    display: flex;
-   align-items: center; 
+   align-items: center;
+   background-color: transparent;
+   margin: 0;
+   color: #f3f3f3;
+   border: 2px solid transparent;
+   border-radius: 5px;
+   padding: 1rem 0;
+   cursor: pointer;
+   transition: padding 0.3s, background-color 0.3s, color 0.3s, border-color 0.3s;
 }
 
-#download-cv{
-    background-color: transparent;
-    color: #f3f3f3;
-    border: 2px solid #f3f3f3;
+:is(#projects-btn, #downloadCV):hover{
+    padding: 1rem 0.5rem;
 }
 
-button:hover,
+#projects-btn, #downloadCV{
+    color: #FFD369;
+}
+
 #projects-btn:hover{
     background-color: #ffe29e;
     color: #172226;
     border: 2px solid #ffe29e;
 }
 
-#download-cv:hover{
+#downloadCV:hover{
     background-color: #172226;
     color: #FFD369;
     border: 2px solid #FFD369;
