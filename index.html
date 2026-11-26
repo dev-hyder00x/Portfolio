@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Portfolio</title>
+    <title>Haider Khan | Portfolio</title>
 </head>
 <body>
     <header>
-        <nav>
-            <a href="#">Home</a>
-            <div class="nav-links">
+        <nav aria-label="Main navigation">
+            <a class="brand" href="#about">Haider Khan<span>.</span></a>
+            <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-navigation">
+                <span class="nav-toggle-icon" aria-hidden="true"><span></span><span></span><span></span></span>
+            </button>
+            <div class="nav-links" id="primary-navigation">
                 <a href="#about">About</a>
                 <a href="#projects">Projects</a>
                 <a href="#skills">Skills</a>
@@ -23,7 +26,7 @@
         <section id="about">
             <p id="name-is">My name is</p>
             <h1 id="name">Haider Khan.</h1>
-            <h2>Aspiring Software Developer | Persuing BCA</h2>
+            <h2>Aspiring Software Developer | Pursuing BCA</h2>
             <p>First-year Bachelor of Computer Applications (BCA) student passionate about building clean, responsive web applications and scalable backend APIs. Focused on turning real-world problems into working software.</p>
             <div class="action-container">
                 <a id="projects-btn" href="#projects">Projects</a>
@@ -32,8 +35,6 @@
             
             <div id="id-links">
                 <a href="https://github.com/dev-hyder00x" target="_blank" rel="noopener noreferrer">GitHub</a>
-                <a href="#" onclick="alert('I do not have a LinkedIn profile yet.'); return false;">LinkedIn</a>
-                <a href="#" onclick="alert('I do not have a LeetCode profile yet.'); return false;">LeetCode</a>
                 <a href="mailto:dev.haider.00x@gmail.com">Email</a>
             </div>
         </section>
@@ -42,24 +43,12 @@
             <div class="projects-container">
                     <div class="project">
                     <div class="project-image">
-                        <img src="images/project1.png" alt="Project 1">
+                        <img src="images/project1.png" alt="Screenshot of Haider Khan's portfolio website">
                     </div>
-                    <h3>This Website</h3>
-                    <p>This is my personal portfolio website built using HTML, CSS, and JavaScript. It showcases my skills, projects, and contact information.</p>
+                    <h3>Portfolio Website</h3>
+                    <p>A responsive personal portfolio built with HTML and CSS to present my projects, skills, and contact information.</p>
                     <div class="project-links">
                         <a href="https://github.com/dev-hyder00x/Portfolio" target="_blank" rel="noopener noreferrer">View on GitHub</a>
-                        <a href="#" target="_blank">View Live</a>
-                    </div>
-                </div>
-                <div class="project">
-                    <div class="project-image">
-                        <img src="images/joshua-sortino-xZqr8WtYEJ0-unsplash.jpg" alt="Project 2">
-                    </div>
-                    <h3>Project That Does Not Exist</h3>
-                    <p>It Does Not Exist... for now.</p>
-                    <div class="project-links">
-                        <a href="https://github.com/dev-hyder00x" target="_blank" rel="noopener noreferrer">View on GitHub</a>
-                        <a href="#" target="_blank">View Live</a>
                     </div>
                 </div>
             </div>
