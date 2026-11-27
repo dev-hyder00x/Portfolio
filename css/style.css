@@ -42,6 +42,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    position: relative;
     max-width: 1100px;
     gap: 0.75rem 1rem;
     margin: 0 auto;
@@ -124,6 +125,10 @@ nav button:focus-visible{
 }
 
 @media (max-width: 600px){
+    body{
+        font-size: 1rem;
+    }
+
     header{
         width: calc(100% - 1rem);
         margin-top: 0.5rem;
@@ -148,7 +153,7 @@ nav button:focus-visible{
         display: none;
         position: absolute;
         top: calc(100% + 0.5rem);
-        right: 0;
+        right: 0.75rem;
         left: auto;
         flex-direction: column;
         gap: 0.15rem;
@@ -184,6 +189,66 @@ nav button:focus-visible{
         transform: translateY(-6px) rotate(-45deg);
     }
 
+    section{
+        margin-inline: 0.25rem;
+        padding: 3rem 1rem;
+    }
+
+    section:first-child{
+        padding-top: 2.5rem;
+    }
+
+    #name{
+        font-size: clamp(2.35rem, 12vw, 3.25rem);
+        overflow-wrap: anywhere;
+    }
+
+    #about h2{
+        font-size: 1.25rem;
+        line-height: 1.35;
+    }
+
+    #about p:not(#name-is){
+        line-height: 1.65;
+    }
+
+    .action-container{
+        margin: 1.5rem 0 2rem;
+        gap: 0.65rem;
+    }
+
+    #projects-btn,
+    #downloadCV{
+        flex: 1 1 8.5rem;
+        min-width: 0;
+        max-width: 12rem;
+        padding-inline: 0.75rem;
+    }
+
+    #id-links{
+        margin-top: 1.5rem;
+    }
+
+    #projects .projects-container{
+        gap: 1.25rem;
+    }
+
+    #projects .project{
+        padding: 0.75rem;
+    }
+
+    #projects .project-image{
+        height: clamp(150px, 52vw, 200px);
+    }
+
+    #projects .project h3{
+        font-size: 1.25rem;
+        margin-top: 0.75rem;
+    }
+
+    #contact p{
+        overflow-wrap: anywhere;
+    }
 }
 
 @media (max-width: 360px){
